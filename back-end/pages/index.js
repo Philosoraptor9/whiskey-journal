@@ -4,19 +4,18 @@ import NavBar from '../components/navbar.js'
 
 const Index = () => (
   <div>
-    <Link href="/about">
-      <a>About Page</a>
-    </Link>
+
+  <Layout>
+      <p>this is the home page</p>
+  </Layout>
     <p>Hello Next.js</p>
   </div>
 )
 
 // const NavButtons = () => ()
 
-export default () => (
-  <Layout>
-      <p>this is the home page</p>
-  </Layout>
-)
+
+ 
+
 
 export default Index

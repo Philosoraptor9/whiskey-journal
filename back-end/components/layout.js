@@ -1,4 +1,4 @@
-import Header from './header';
+import NavBar from './navbar';
 
 const layoutStyle = {
     margin: 20,
@@ -8,7 +8,7 @@ const layoutStyle = {
 
 const Layout = (props) => (
     <div style={layoutStyle}>
-        <Header />
+        <NavBar />
             {props.children}
    </div>
 )
