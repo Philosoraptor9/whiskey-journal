@@ -7,7 +7,8 @@ export default () => (
     <NavLayout>
         <p>this is the tasting tips page navbar</p>
     </NavLayout>
-        <p>How to drink it:
+    <h3>How to drink it:</h3>
+        <p>
         Check the ABV first to make sure your don’t get too eager and singe your sinuses. 
         Swirl the snifter or whiskey glass by your nose to release the aromas and put the 
         glass to your face to get a good whiff, leaving your mouth open as you inhale. 

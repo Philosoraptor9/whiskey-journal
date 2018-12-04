@@ -9987,13 +9987,13 @@ var Index = function Index() {
       lineNumber: 17
     },
     __self: this
-  }, "this is the home page navbar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "this is the home page navbar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, "Hello Next.js"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Mmm Whisky"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/tips",
     __source: {
       fileName: _jsxFileName,

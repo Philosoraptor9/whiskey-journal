@@ -182,10 +182,10 @@ var NavBar = function NavBar() {
 
 /***/ }),
 
-/***/ "./pages/tips.js":
-/*!***********************!*\
-  !*** ./pages/tips.js ***!
-  \***********************/
+/***/ "./pages/him.js":
+/*!**********************!*\
+  !*** ./pages/him.js ***!
+  \**********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -194,10 +194,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_NavLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/NavLayout.js */ "./components/NavLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "next/link");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/navbar.js */ "./components/navbar.js");
-var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/tips.js";
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "next/link");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/navbar.js */ "./components/navbar.js");
+var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/him.js";
+
 
 
 
@@ -206,40 +209,106 @@ var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/tip
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
-  }, "this is the tasting tips page navbar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "this is the navbar for the how whiskey is made page")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
-  }, "How to drink it: Check the ABV first to make sure your don\u2019t get too eager and singe your sinuses. Swirl the snifter or whiskey glass by your nose to release the aromas and put the glass to your face to get a good whiff, leaving your mouth open as you inhale. Take a sip and chew the whisky for 3-5 seconds to let the flavor hit you, exhaling through the nose as you swallow. Think about the story of the flavor from the beginning of that first whiff until it fades after the finish. How is the flavor structured? When are different tastes introduced? Does it have a satisfying conclusion? Before taking another sip, add just a few drops to a splash of water- no more than 20% of the volume of your drink. Take another sip and compare. How has the flavor profile changed? Keep in mind that sniffing and sipping a few high ABV whiskeys can quickly numb your nose and palate. Ice can suppress the flavor of the whiskey. Tasting whiskey should be a creative exploration of your senses of taste and smell. Practice describing and comparing flavors and as you refine your palate you will learn to appreciate them more! Talk with friends to compare your flavor experiences and gain different perspectives. "));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "(1)"), " crushing grains (barley, corn, rye, wheat, etc.) to create the grist,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "(2)"), " adding water to create the mash", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "(3)"), " boiling this mixture and then allowing it to cool,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "(4)"), " adding yeast, which carries out fermentation by eating the sugars to create alcohol,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "(5)"), " draining the resulting liquid, which is now beer, and then distilling using a still and", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "(6)"), " aging the resulting liquor in wooden barrels."));
 });
 
 /***/ }),
 
 /***/ 6:
-/*!*****************************!*\
-  !*** multi ./pages/tips.js ***!
-  \*****************************/
+/*!****************************!*\
+  !*** multi ./pages/him.js ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/tips.js */"./pages/tips.js");
+module.exports = __webpack_require__(/*! ./pages/him.js */"./pages/him.js");
 
 
 /***/ }),
@@ -255,6 +324,17 @@ module.exports = require("next/link");
 
 /***/ }),
 
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -267,4 +347,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=tips.js.map
+//# sourceMappingURL=him.js.map

@@ -17,7 +17,7 @@ const Index = () => (
       <p>this is the home page navbar</p>
     </NavLayout>
 
-      <p>Hello Next.js</p>
+      <h3>Mmm Whisky</h3>
 
         <Link href= '/tips'>
           <button>Tasting Tips</button>
