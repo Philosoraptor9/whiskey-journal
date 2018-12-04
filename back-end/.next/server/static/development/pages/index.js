@@ -93,10 +93,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/layout.js":
-/*!******************************!*\
-  !*** ./components/layout.js ***!
-  \******************************/
+/***/ "./components/NavLayout.js":
+/*!*********************************!*\
+  !*** ./components/NavLayout.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -113,13 +113,13 @@ var layoutStyle = {
   border: '1px solid  #DDD'
 };
 
-var Layout = function Layout(props) {
+var NavLayout = function NavLayout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: layoutStyle
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), props.children);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
+/* harmony default export */ __webpack_exports__["default"] = (NavLayout);
 
 /***/ }),
 
@@ -181,7 +181,7 @@ var NavBar = function NavBar() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout.js */ "./components/layout.js");
+/* harmony import */ var _components_NavLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/NavLayout.js */ "./components/NavLayout.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "next/link");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/navbar.js */ "./components/navbar.js");
@@ -190,8 +190,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var PageLink = function PageLink(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    as: "/p/".concat(props.id),
+    href: "/pages?title=".concat(props.title)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, props.title)));
+};
+
 var Index = function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout_js__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "this is the home page")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Hello Next.js"));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "this is the home page navbar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Hello Next.js"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageLink, {
+    id: "him",
+    title: "How It's Made"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageLink, {
+    id: "tasting-tips",
+    title: "Tasting Tips"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageLink, {
+    id: "kow",
+    title: "Kinds of Whisky"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageLink, {
+    id: "history-of-whisky",
+    title: "History of Whisky"
+  })));
 }; // const NavButtons = () => ()
 
 

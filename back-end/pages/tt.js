@@ -1,9 +1,9 @@
-import Layout from '../components/layout.js'
+import NavLayout from '../components/NavLayout.js'
 import Link from 'next/link'
 import NavBar from '../components/navbar.js'
 
 export default () => (
-    <Layout>
-        <p>this is the tasting tips page</p>
-    </Layout>
+    <NavLayout>
+        <p>this is the tasting tips page navbar</p>
+    </NavLayout>
 )
