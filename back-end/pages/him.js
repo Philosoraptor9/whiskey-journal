@@ -1,4 +1,5 @@
 import NavLayout from '../components/NavLayout.js'
+import {withRouter} from 'next/router'
 import Link from 'next/link'
 import NavBar from '../components/navbar.js'
 

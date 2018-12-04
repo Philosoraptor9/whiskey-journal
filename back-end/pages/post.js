@@ -1,5 +1,4 @@
 import NavLayout from '../components/NavLayout.js'
-import {withRouter} from 'next/router'
 import Markdown from 'react-markdown'
 
 export default () => (
