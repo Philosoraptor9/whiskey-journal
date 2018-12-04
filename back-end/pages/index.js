@@ -20,24 +20,22 @@ const Index = () => (
       <p>Hello Next.js</p>
 
         <Link href= '/tips'>
-          <a>Tasting Tips</a>
+          <button>Tasting Tips</button>
         </Link>
       <br/>
         <Link href= '/kinds'>
-          <a>Kinds of Whiskey</a>
+          <button>Kinds of Whiskey</button>
         </Link>
       <br/>
         <Link href= '/him'>
-          <a>How It's Made</a>
+          <button>How It's Made</button>
         </Link>
       <br/>
         <Link href= '/history'>
-          <a>History</a>
+          <button>History</button>
         </Link>
     
   </div>
 )
-
-// const NavButtons = () => ()
 
 export default Index

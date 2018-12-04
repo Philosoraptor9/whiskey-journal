@@ -62,7 +62,7 @@ var Index = function Index() {
       lineNumber: 22
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -153,4 +153,4 @@ var Index = function Index() {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.23471df53b8388966cdc.hot-update.js.map
+//# sourceMappingURL=index.js.22770c18c51d4cc45ecb.hot-update.js.map

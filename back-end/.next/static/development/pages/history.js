@@ -9971,7 +9971,7 @@ var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/his
 
 /***/ }),
 
-/***/ 7:
+/***/ 8:
 /*!********************************!*\
   !*** multi ./pages/history.js ***!
   \********************************/
@@ -9996,5 +9996,5 @@ module.exports = dll_52339ab353c8e0db40da;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js"]]]));;
+},[[8,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=history.js.map
