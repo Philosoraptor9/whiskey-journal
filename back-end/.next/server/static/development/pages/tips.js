@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -105,9 +105,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ "./components/navbar.js");
+var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/components/NavLayout.js";
 
 
-var layoutStyle = {
+var navLayout = {
   margin: 20,
   padding: 20,
   border: '1px solid  #DDD'
@@ -115,8 +116,19 @@ var layoutStyle = {
 
 var NavLayout = function NavLayout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: layoutStyle
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), props.children);
+    style: navLayout,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }), props.children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavLayout);
@@ -170,10 +182,10 @@ var NavBar = function NavBar() {
 
 /***/ }),
 
-/***/ "./pages/history.js":
-/*!**************************!*\
-  !*** ./pages/history.js ***!
-  \**************************/
+/***/ "./pages/tips.js":
+/*!***********************!*\
+  !*** ./pages/tips.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -185,37 +197,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "next/link");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/navbar.js */ "./components/navbar.js");
-var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/history.js";
+var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/tips.js";
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, "this is the navbar for the history of whiskey page"));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "this is the tasting tips page navbar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, "How to drink it: Check the ABV first to make sure your don\u2019t get too eager and singe your sinuses. Swirl the snifter or whiskey glass by your nose to release the aromas and put the glass to your face to get a good whiff, leaving your mouth open as you inhale. Take a sip and chew the whisky for 3-5 seconds to let the flavor hit you, exhaling through the nose as you swallow. Think about the story of the flavor from the beginning of that first whiff until it fades after the finish. How is the flavor structured? When are different tastes introduced? Does it have a satisfying conclusion? Before taking another sip, add just a few drops to a splash of water- no more than 20% of the volume of your drink. Take another sip and compare. How has the flavor profile changed? Keep in mind that sniffing and sipping a few high ABV whiskeys can quickly numb your nose and palate. Ice can suppress the flavor of the whiskey. Tasting whiskey should be a creative exploration of your senses of taste and smell. Practice describing and comparing flavors and as you refine your palate you will learn to appreciate them more! Talk with friends to compare your flavor experiences and gain different perspectives. "));
 });
 
 /***/ }),
 
-/***/ 8:
-/*!********************************!*\
-  !*** multi ./pages/history.js ***!
-  \********************************/
+/***/ 6:
+/*!*****************************!*\
+  !*** multi ./pages/tips.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/history.js */"./pages/history.js");
+module.exports = __webpack_require__(/*! ./pages/tips.js */"./pages/tips.js");
 
 
 /***/ }),
@@ -243,4 +267,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=history.js.map
+//# sourceMappingURL=tips.js.map
