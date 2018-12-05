@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/him.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/history.js"],{
 
 /***/ "./components/NavLayout.js":
 /*!*********************************!*\
@@ -6447,18 +6447,6 @@ module.exports = __webpack_require__(/*! ./dist/lib/link */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/router.js":
-/*!*************************************!*\
-  !*** ./node_modules/next/router.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/lib/router */ "./node_modules/next/dist/lib/router/index.js")
-
-
-/***/ }),
-
 /***/ "./node_modules/node-libs-browser/node_modules/punycode/punycode.js":
 /*!**************************************************************************!*\
   !*** ./node_modules/node-libs-browser/node_modules/punycode/punycode.js ***!
@@ -9938,10 +9926,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/him.js":
-/*!**********************!*\
-  !*** ./pages/him.js ***!
-  \**********************/
+/***/ "./pages/history.js":
+/*!**************************!*\
+  !*** ./pages/history.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9950,13 +9938,10 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_NavLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/NavLayout.js */ "./components/NavLayout.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/navbar.js */ "./components/navbar.js");
-var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/him.js";
-
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/navbar.js */ "./components/navbar.js");
+var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/history.js";
 
 
 
@@ -9965,94 +9950,28 @@ var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/him
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
-  }, "this is the navbar for the how whiskey is made page")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "this is the navbar for the history of whiskey page")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "(1)"), " crushing grains (barley, corn, rye, wheat, etc.) to create the grist,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "(2)"), " adding water to create the mash", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "(3)"), " boiling this mixture and then allowing it to cool,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "(4)"), " adding yeast, which carries out fermentation by eating the sugars to create alcohol,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "(5)"), " draining the resulting liquid, which is now beer, and then distilling using a still and", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, "(6)"), " aging the resulting liquor in wooden barrels."));
+  }, "It is possible that\xA0distillation\xA0was practiced by the\xA0Babylonians\xA0in\xA0 Mesopotamia\xA0in the\xA02nd millennium BC, with perfumes and aromatics being distilled,\xA0but this is subject to uncertain and disputed interpretations of evidence. The earliest certain chemical distillations were by Greeks in\xA0Alexandria\xA0in the 1st century AD, but these were not distillations of alcohol. The medieval Arabs adopted the distillation technique of the Alexandrian Greeks, and written records in Arabic begin in the 9th century, but again these were not distillations of alcohol. Distilling technology passed from the medieval Arabs to the medieval Latins, with the earliest records in Latin in the early 12th century. The earliest records of the distillation of alcohol are in Italy in the 13th century, where alcohol was distilled from wine.\xA0An early description of the technique was given by\xA0Ramon Llull\xA0(1232 \u2013 1315).\xA0Its use spread through medieval\xA0monasteries, largely for medicinal purposes, such as the treatment of\xA0 colic\xA0and\xA0smallpox. The art of distillation spread to Ireland and Scotland no later than the 15th century, as did the common European practice of distilling \"aqua vitae\", spirit alcohol, primarily for medicinal purposes.\xA0The practice of medicinal distillation eventually passed from a monastic setting to the secular via professional medical practitioners of the time, The\xA0Guild of Barber Surgeons. The earliest mention of whisky in Ireland comes from the seventeenth-century\xA0 Annals of Clonmacnoise, which attributes the death of a chieftain in 1405 to \"taking a surfeit of aqua vitae\" at Christmas. In Scotland, the first evidence of whisky production comes from an entry in the\xA0Exchequer Rolls\xA0for 1494 where malt is sent \"To Friar John Cor, by order of the king, to make aquavitae\", enough to make about 500 bottles. The distillation process was still in its infancy; whisky itself was not allowed to age, and as a result tasted very raw and brutal compared to today's versions. Renaissance-era whisky was also very potent and not diluted. Over time whisky evolved into a much smoother drink."));
 });
     (function (Component, route) {
       if(!Component) return
@@ -10070,21 +9989,21 @@ var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/him
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/him")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/history")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 6:
-/*!****************************!*\
-  !*** multi ./pages/him.js ***!
-  \****************************/
+/***/ 7:
+/*!********************************!*\
+  !*** multi ./pages/history.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/him', function() {
-module.exports = __webpack_require__(/*! ./pages/him.js */"./pages/him.js");
+__NEXT_REGISTER_PAGE('/history', function() {
+module.exports = __webpack_require__(/*! ./pages/history.js */"./pages/history.js");
 
 return { page: module.exports.default }});
 
@@ -10101,5 +10020,5 @@ module.exports = dll_52339ab353c8e0db40da;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=him.js.map
+},[[7,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=history.js.map
