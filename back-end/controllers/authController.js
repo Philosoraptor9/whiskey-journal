@@ -9,6 +9,7 @@ router.post('/register', async (req, res)=> {
     try{
         // Create the new user in the db
         const newUser = await User.create(req.body)
+        console.log('CREATED THE USER')
         console.log(req.body)
 
         // Create their new password in the db
@@ -70,16 +71,18 @@ router.post('/login', async (req, res)=> {
             }
             else {
                 // Redirect if password is incorrect
-                req.session.message = 'incorrect username or password';
-                console.log(req.session.message);
-                res.redirect('/auth/login');
+                req.session.message = 'username or password is incorrect'
+                console.log(req.session.message)
+                console.log('PASSWORD INCORRECT')
+                res.redirect('/auth/login')
                 }
             }
         else{
             // Redirect if username is incorrect
-            req.session.message = 'username or password is incorrect';
-            console.log(req.session.message);
-            res.redirect('/auth/login');
+            req.session.message = 'username or password is incorrect'
+            console.log(req.session.message)
+            console.log('USERNAME INCORRECT')
+            res.redirect('/auth/login')
             }
 
     }catch(err){

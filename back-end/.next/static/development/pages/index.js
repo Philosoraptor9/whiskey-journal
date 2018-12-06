@@ -55,6 +55,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/components/navbar.js";
 
 
 var linkStyle = {
@@ -62,26 +63,82 @@ var linkStyle = {
 };
 
 var NavBar = function NavBar() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/"
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle
+    style: linkStyle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about"
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle
+    style: linkStyle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
   }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post"
+    href: "/post",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle
+    style: linkStyle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
   }, "New Whiskey")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/#"
+    href: "/#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle
+    style: linkStyle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
   }, "My Journal")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/#"
+    href: "/#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle
+    style: linkStyle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
   }, "Logout")));
 };
 
@@ -1568,7 +1625,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.7' };
+var core = module.exports = { version: '2.6.0' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -6992,12 +7049,12 @@ module.exports = __webpack_require__(/*! ./dist/lib/router */ "./node_modules/ne
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_ce91d52655bad4e4cbb5 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_ecf3a5bbb48abe85e1e6 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce91d52655bad4e4cbb5 */ "dll-reference dll_ce91d52655bad4e4cbb5"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ecf3a5bbb48abe85e1e6 */ "dll-reference dll_ecf3a5bbb48abe85e1e6"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -7445,12 +7502,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_ce91d52655bad4e4cbb5 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_ecf3a5bbb48abe85e1e6 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce91d52655bad4e4cbb5 */ "dll-reference dll_ce91d52655bad4e4cbb5"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ecf3a5bbb48abe85e1e6 */ "dll-reference dll_ecf3a5bbb48abe85e1e6"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -8058,12 +8115,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_ce91d52655bad4e4cbb5 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_ecf3a5bbb48abe85e1e6 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce91d52655bad4e4cbb5 */ "dll-reference dll_ce91d52655bad4e4cbb5"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ecf3a5bbb48abe85e1e6 */ "dll-reference dll_ecf3a5bbb48abe85e1e6"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -8278,12 +8335,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_ce91d52655bad4e4cbb5 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_ecf3a5bbb48abe85e1e6 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce91d52655bad4e4cbb5 */ "dll-reference dll_ce91d52655bad4e4cbb5"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ecf3a5bbb48abe85e1e6 */ "dll-reference dll_ecf3a5bbb48abe85e1e6"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -9840,33 +9897,13 @@ module.exports = {
 /***/ }),
 
 /***/ "./node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
+/*!******************************************************************************************************!*\
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_ecf3a5bbb48abe85e1e6 ***!
+  \******************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1, eval)("this");
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
+module.exports = (__webpack_require__(/*! dll-reference dll_ecf3a5bbb48abe85e1e6 */ "dll-reference dll_ecf3a5bbb48abe85e1e6"))("./node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -10089,7 +10126,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -10103,16 +10140,16 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_ce91d52655bad4e4cbb5":
+/***/ "dll-reference dll_ecf3a5bbb48abe85e1e6":
 /*!*******************************************!*\
-  !*** external "dll_ce91d52655bad4e4cbb5" ***!
+  !*** external "dll_ecf3a5bbb48abe85e1e6" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_ce91d52655bad4e4cbb5;
+module.exports = dll_ecf3a5bbb48abe85e1e6;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
