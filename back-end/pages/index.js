@@ -1,15 +1,10 @@
-import NavLayout from '../components/NavLayout.js'
-import Link from 'next/link'
-import {withRouter} from 'next/router'
-import NavBar from '../components/navbar.js'
+import Link from 'next/link';
+import Head from 'next/head';
+import NavLayout from '../components/NavLayout.js';
+import withLayout from '../lib/withLayout';
+import Button from '@material-ui/core/Button';
 
-// const PostLink = (props) => (
-//   <li>
-//     <Link href={`/page?title=${props.title}`}>
-//       <a>{props.title}</a>
-//     </Link>
-//   </li>
-// )
+
 
 const Index = () => (
   <div>
@@ -17,25 +12,31 @@ const Index = () => (
       <p>this is the home page navbar</p>
     </NavLayout>
 
-      <p>Hello Next.js</p>
+      <h3>Mmm Whiskey</h3>
 
         <Link href= '/tips'>
-          <button>Tasting Tips</button>
+          <Button variant="contained">Tasting Tips</Button>
         </Link>
+
       <br/>
+
         <Link href= '/kinds'>
-          <button>Kinds of Whiskey</button>
+          <Button variant="contained">Kinds of Whiskey</Button>
         </Link>
+
       <br/>
+
         <Link href= '/him'>
-          <button>How It's Made</button>
+          <Button variant="contained">How It's Made</Button>
         </Link>
+
       <br/>
+
         <Link href= '/history'>
-          <button>History</button>
+          <Button variant="contained">History</Button>
         </Link>
     
   </div>
 )
 
-export default Index
+export default withLayout(Index);
