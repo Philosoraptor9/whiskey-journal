@@ -10,13 +10,13 @@ MVP goals:
   - Intensity meters: Sweet/Dry, Delicate/Bold, Smooth/Intense
   - Observations: a brief post about your experience with the whiskey
   - In a single word
-  - Score 0-10
-  - Photo upload
+  - Score 1-5 stars
 - Sortable list of your whiskeys with full CRUDability
   - Displays photos and names
   - Defaults to alphabetical order but sortable by flavor checklist and intensity meters
   
   Stretch Goals:
   - Customizeable color themes
+  - Photo upload
   - Google maps search for distilleries
   - Login with google/facebook
