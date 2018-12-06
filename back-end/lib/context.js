@@ -29,6 +29,7 @@ export default function getContext() {
 
   if (!global.INIT_MATERIAL_UI) {
     global.INIT_MATERIAL_UI = createPageContext();
+    console.log(global.INIT_MATERIAL_UI);
   }
 
   return global.INIT_MATERIAL_UI;

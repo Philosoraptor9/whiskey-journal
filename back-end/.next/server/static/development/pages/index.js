@@ -394,6 +394,7 @@ function getContext() {
 
   if (!global.INIT_MATERIAL_UI) {
     global.INIT_MATERIAL_UI = createPageContext();
+    console.log(global.INIT_MATERIAL_UI);
   }
 
   return global.INIT_MATERIAL_UI;
@@ -547,12 +548,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_NavLayout_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/NavLayout.js */ "./components/NavLayout.js");
-/* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/navbar.js */ "./components/navbar.js");
-/* harmony import */ var _lib_withLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/withLayout */ "./lib/withLayout.js");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _lib_withLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/withLayout */ "./lib/withLayout.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/index.js";
-
 
 
 
@@ -585,14 +584,14 @@ var Index = function Index() {
       lineNumber: 15
     },
     __self: this
-  }, "Mmm Whisky"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Mmm Whiskey"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/tips",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
     variant: "contained",
     __source: {
       fileName: _jsxFileName,
@@ -612,7 +611,7 @@ var Index = function Index() {
       lineNumber: 23
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
     variant: "contained",
     __source: {
       fileName: _jsxFileName,
@@ -632,7 +631,7 @@ var Index = function Index() {
       lineNumber: 29
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
     variant: "contained",
     __source: {
       fileName: _jsxFileName,
@@ -652,7 +651,7 @@ var Index = function Index() {
       lineNumber: 35
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
     variant: "contained",
     __source: {
       fileName: _jsxFileName,
@@ -662,7 +661,7 @@ var Index = function Index() {
   }, "History")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_lib_withLayout__WEBPACK_IMPORTED_MODULE_5__["default"])(Index));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_lib_withLayout__WEBPACK_IMPORTED_MODULE_4__["default"])(Index));
 
 /***/ }),
 

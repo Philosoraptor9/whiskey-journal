@@ -1,4 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document';
+import getContext from '../lib/context';
+
+const pageContext = getContext();
 
 class MyDocument extends Document {
     render() {
@@ -78,6 +81,33 @@ class MyDocument extends Document {
     }
   }
 
+// Even though I installed react-jss, still getting a jss not defined error from 
+// formula below that breaks everything
 
+  // MyDocument.getInitialProps = ({ renderPage }) => {
+  //   const pageContext = getContext();
+  //   const page = renderPage(Component => props => (
+  //     <JssProvider
+  //       registry={pageContext.sheetsRegistry}
+  //       generateClassName={pageContext.generateClassName}
+  //     >
+  //       <Component pageContext={pageContext} {...props} />
+  //     </JssProvider>
+  //   ));
+  
+  //   return {
+  //     ...page,
+  //     pageContext,
+  //     styles: (
+  //       <style
+  //         id="jss-server-side"
+  //         // eslint-disable-next-line
+  //         dangerouslySetInnerHTML={{
+  //           __html: pageContext.sheetsRegistry.toString(),
+  //         }}
+  //       />
+  //     ),
+  //   };
+  // };
   
 export default MyDocument;

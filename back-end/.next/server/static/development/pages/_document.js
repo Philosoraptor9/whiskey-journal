@@ -93,6 +93,66 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./lib/context.js":
+/*!************************!*\
+  !*** ./lib/context.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getContext; });
+/* harmony import */ var react_jss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-jss */ "react-jss");
+/* harmony import */ var react_jss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_colors_blue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/colors/blue */ "@material-ui/core/colors/blue");
+/* harmony import */ var _material_ui_core_colors_blue__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_blue__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/colors/grey */ "@material-ui/core/colors/grey");
+/* harmony import */ var _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createMuiTheme"])({
+  palette: {
+    primary: {
+      main: _material_ui_core_colors_blue__WEBPACK_IMPORTED_MODULE_2___default.a[700]
+    },
+    secondary: {
+      main: _material_ui_core_colors_grey__WEBPACK_IMPORTED_MODULE_3___default.a[700]
+    }
+  },
+  typography: {
+    useNextVariants: true
+  }
+});
+
+function createPageContext() {
+  return {
+    theme: theme,
+    sheetsManager: new Map(),
+    sheetsRegistry: new react_jss__WEBPACK_IMPORTED_MODULE_0__["SheetsRegistry"](),
+    generateClassName: Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createGenerateClassName"])()
+  };
+}
+
+function getContext() {
+  if (true) {
+    return createPageContext();
+  }
+
+  if (!global.INIT_MATERIAL_UI) {
+    global.INIT_MATERIAL_UI = createPageContext();
+    console.log(global.INIT_MATERIAL_UI);
+  }
+
+  return global.INIT_MATERIAL_UI;
+}
+
+/***/ }),
+
 /***/ "./pages/_document.js":
 /*!****************************!*\
   !*** ./pages/_document.js ***!
@@ -106,6 +166,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/document */ "next/document");
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/context */ "./lib/context.js");
 var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/_document.js";
 
 
@@ -129,6 +190,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+var pageContext = Object(_lib_context__WEBPACK_IMPORTED_MODULE_2__["default"])();
+
 var MyDocument =
 /*#__PURE__*/
 function (_Document) {
@@ -147,20 +210,20 @@ function (_Document) {
         lang: "en",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6
+          lineNumber: 9
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 10
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
         charSet: "utf-8",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 11
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -168,7 +231,7 @@ function (_Document) {
         content: "width=device-width, initial-scale=1.0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 12
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -176,7 +239,7 @@ function (_Document) {
         content: "notranslate",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 13
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -184,7 +247,7 @@ function (_Document) {
         content: "#1976D2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 14
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -192,7 +255,7 @@ function (_Document) {
         href: "https://storage.googleapis.com/builderbook/favicon32.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 16
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -200,7 +263,7 @@ function (_Document) {
         href: "https://fonts.googleapis.com/css?family=Muli:300,400:latin",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 20
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -208,7 +271,7 @@ function (_Document) {
         href: "https://fonts.googleapis.com/icon?family=Material+Icons",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 24
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -216,7 +279,7 @@ function (_Document) {
         href: "https://storage.googleapis.com/builderbook/nprogress.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 28
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -224,13 +287,13 @@ function (_Document) {
         href: "https://storage.googleapis.com/builderbook/vs.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 32
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 34
         },
         __self: this
       }, "\n                a, a:focus {\n                  font-weight: 400;\n                  color: #1565C0;\n                  text-decoration: none;\n                  outline: none\n                }\n                a:hover, button:hover {\n                  opacity: 0.75;\n                  cursor: pointer\n                }\n                blockquote {\n                  padding: 0 1em;\n                  color: #555;\n                  border-left: 0.25em solid #dfe2e5;\n                }\n                pre {\n                  display: block;\n                  overflow-x: auto;\n                  padding: 0.5em;\n                  background: #FFF;\n                  border: 1px solid #ddd;\n                }\n                code {\n                  font-size: 14px;\n                  background: #FFF;\n                  padding: 3px 5px;\n                }\n              ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
@@ -244,19 +307,19 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 76
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 77
         },
         __self: this
       })));
@@ -264,7 +327,33 @@ function (_Document) {
   }]);
 
   return MyDocument;
-}(next_document__WEBPACK_IMPORTED_MODULE_1___default.a);
+}(next_document__WEBPACK_IMPORTED_MODULE_1___default.a); // Even though I installed react-jss, still getting a jss not defined error from 
+// formula below that breaks everything
+// MyDocument.getInitialProps = ({ renderPage }) => {
+//   const pageContext = getContext();
+//   const page = renderPage(Component => props => (
+//     <JssProvider
+//       registry={pageContext.sheetsRegistry}
+//       generateClassName={pageContext.generateClassName}
+//     >
+//       <Component pageContext={pageContext} {...props} />
+//     </JssProvider>
+//   ));
+//   return {
+//     ...page,
+//     pageContext,
+//     styles: (
+//       <style
+//         id="jss-server-side"
+//         // eslint-disable-next-line
+//         dangerouslySetInnerHTML={{
+//           __html: pageContext.sheetsRegistry.toString(),
+//         }}
+//       />
+//     ),
+//   };
+// };
+
 
 /* harmony default export */ __webpack_exports__["default"] = (MyDocument);
 
@@ -279,6 +368,39 @@ function (_Document) {
 
 module.exports = __webpack_require__(/*! ./pages/_document.js */"./pages/_document.js");
 
+
+/***/ }),
+
+/***/ "@material-ui/core/colors/blue":
+/*!************************************************!*\
+  !*** external "@material-ui/core/colors/blue" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/colors/blue");
+
+/***/ }),
+
+/***/ "@material-ui/core/colors/grey":
+/*!************************************************!*\
+  !*** external "@material-ui/core/colors/grey" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/colors/grey");
+
+/***/ }),
+
+/***/ "@material-ui/core/styles":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/styles" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/styles");
 
 /***/ }),
 
@@ -301,6 +423,17 @@ module.exports = require("next/document");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-jss":
+/*!****************************!*\
+  !*** external "react-jss" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-jss");
 
 /***/ })
 

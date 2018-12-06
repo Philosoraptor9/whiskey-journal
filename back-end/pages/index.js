@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import NavLayout from '../components/NavLayout.js';
-import NavBar from '../components/navbar.js';
 import withLayout from '../lib/withLayout';
 import Button from '@material-ui/core/Button';
+
 
 
 const Index = () => (
@@ -12,7 +12,7 @@ const Index = () => (
       <p>this is the home page navbar</p>
     </NavLayout>
 
-      <h3>Mmm Whisky</h3>
+      <h3>Mmm Whiskey</h3>
 
         <Link href= '/tips'>
           <Button variant="contained">Tasting Tips</Button>
