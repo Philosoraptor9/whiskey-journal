@@ -20,3 +20,4 @@ MVP goals:
   - Photo upload
   - Google maps search for distilleries
   - Login with google/facebook
+  - Mobile compatibility
