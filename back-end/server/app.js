@@ -1,7 +1,13 @@
 import dotenv from 'dotenv';
+
 import express from 'express';
 import next from 'next';
+
 import mongoose from 'mongoose';
+
+import session from 'express-session';
+import mongoSessionStore from 'connect-mongo';
+
 import User from './models/User';
 
 dotenv.config();
@@ -29,7 +35,27 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
+  const MongoStore = mongoSessionStore(session);
+
+  const sess = {
+    name: 'builderbook.sid',  // change for final version
+    secret: 'HD2w.)q*VqRT4/#NK2M/,E^B)}FED5fWU!dKe[ph',
+    store: new MongoStore({
+      mongooseConnection: mongoose.connection,
+      ttl: 3 * 24 * 60 * 60,
+    }),
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      maxAge: 3 * 24 * 60 * 60 * 1000,
+    },
+  };
+  
+  server.use(session(sess));
+
   server.get('/', async (req, res) => {
+    req.session.foo = 'bar';
     const user = await User.findOne({ slug: 'team-builder-book' });
     app.render(req, res, '/', { user })
     console.log('HERE IS THE ', user);
@@ -42,3 +68,8 @@ app.prepare().then(() => {
     console.log(`> Ready on ${ROOT_URL}`); 
   });
 });
+
+
+
+
+
