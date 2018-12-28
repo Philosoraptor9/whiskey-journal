@@ -1,5 +1,6 @@
 import express from 'express';
 import next from 'next';
+import mongoose from 'mongoose;'
 
 const port = process.env.PORT || 8000;
 const ROOT_URL = `http://localhost:${port}`;
@@ -11,9 +12,9 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  server.get('/', (req, res) => {
-    res.send('My express server');
-  });
+  // server.get('/', (req, res) => {
+  //   res.send('My express server');
+  // });
 
   server.get('*', (req, res) => handle(req, res));
 
