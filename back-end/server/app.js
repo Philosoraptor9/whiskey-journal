@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import next from 'next';
 import mongoose from 'mongoose';
+import User from './models/User';
 
 dotenv.config();
 
@@ -28,8 +29,8 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  server.get('/', (req, res) => {
-    const user = { email: 'example@deletethislater.com' };
+  server.get('/', async (req, res) => {
+    const user = await User.findOne({ slug: 'team-builder-book' });
     app.render(req, res, '/', { user })
     console.log('HERE IS THE ', user);
   });
