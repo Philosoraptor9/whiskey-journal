@@ -8,7 +8,20 @@ import Avatar from '@material-ui/core/Avatar';
 
 import { styleToolbar } from './SharedStyles';
 
+import MenuDrop from './MenuDrop'
+
 // import User from '../server/models/User';
+
+const optionsMenu = [
+  {
+    text: 'Got question?',
+    href: 'https://github.com/builderbook/builderbook/issues',
+  },
+  {
+    text: 'Log out',
+    href: '/logout',
+  },
+];
 
 function Header ({ user }) {
   return(
@@ -38,11 +51,9 @@ function Header ({ user }) {
           <Grid item sm={1} xs={3} style={{ textAlign: 'right' }}>
             {user ? (
               <div style={{ whiteSpace: ' nowrap' }}>
-                <Avatar
-                  src={user.avatarUrl}
-                  alt={user.displayName}
-                  style={{ margin: '0px auto 0px 20px' }}
-                />
+                {user.avatarUrl ? (
+                  <MenuDrop options={optionsMenu} src={user.avatarUrl} alt={user.displayName} />
+                  ) : null}
               </div>
             ) : (
               <Link prefetch href="/login">
