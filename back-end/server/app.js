@@ -55,11 +55,12 @@ app.prepare().then(() => {
   server.use(session(sess));
 
   server.get('/', async (req, res) => {
-    req.session.foo = 'bar';
-    const user = await User.findOne({ slug: 'team-builder-book' });
-    app.render(req, res, '/', { user })
+    User.findOne({ slug: 'team-builder-book' }).then(user =>{
+      req.user = user
+    app.render(req, res, '/')
     console.log('HERE IS THE ', user);
-  });
+  })
+})
 
   server.get('*', (req, res) => handle(req, res));
 

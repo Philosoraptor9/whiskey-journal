@@ -167,7 +167,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/document */ "next/document");
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/context */ "./lib/context.js");
-var _jsxFileName = "/Users/philosopheyes/GAhw/whiskey-journal/back-end/pages/_document.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -207,96 +206,38 @@ function (_Document) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("html", {
-        lang: "en",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 9
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-        charSet: "utf-8",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        },
-        __self: this
+        lang: "en"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        charSet: "utf-8"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
         name: "viewport",
-        content: "width=device-width, initial-scale=1.0",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        },
-        __self: this
+        content: "width=device-width, initial-scale=1.0"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
         name: "google",
-        content: "notranslate",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
+        content: "notranslate"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
         name: "theme-color",
-        content: "#1976D2",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
+        content: "#1976D2"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "shortcut icon",
-        href: "https://storage.googleapis.com/builderbook/favicon32.png",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
+        href: "https://storage.googleapis.com/builderbook/favicon32.png"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Muli:300,400:latin",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
+        href: "https://fonts.googleapis.com/css?family=Muli:300,400:latin"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/icon?family=Material+Icons",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        },
-        __self: this
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "stylesheet",
-        href: "https://storage.googleapis.com/builderbook/nprogress.min.css",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
+        href: "https://storage.googleapis.com/builderbook/nprogress.min.css"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "stylesheet",
-        href: "https://storage.googleapis.com/builderbook/vs.min.css",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34
-        },
-        __self: this
-      }, "\n                a, a:focus {\n                  font-weight: 400;\n                  color: #1565C0;\n                  text-decoration: none;\n                  outline: none\n                }\n                a:hover, button:hover {\n                  opacity: 0.75;\n                  cursor: pointer\n                }\n                blockquote {\n                  padding: 0 1em;\n                  color: #555;\n                  border-left: 0.25em solid #dfe2e5;\n                }\n                pre {\n                  display: block;\n                  overflow-x: auto;\n                  padding: 0.5em;\n                  background: #FFF;\n                  border: 1px solid #ddd;\n                }\n                code {\n                  font-size: 14px;\n                  background: #FFF;\n                  padding: 3px 5px;\n                }\n              ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
+        href: "https://storage.googleapis.com/builderbook/vs.min.css"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "/static/nprogress.css"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", null, "\n                a, a:focus {\n                  font-weight: 400;\n                  color: #1565C0;\n                  text-decoration: none;\n                  outline: none\n                }\n                a:hover, button:hover {\n                  opacity: 0.75;\n                  cursor: pointer\n                }\n                blockquote {\n                  padding: 0 1em;\n                  color: #555;\n                  border-left: 0.25em solid #dfe2e5;\n                }\n                pre {\n                  display: block;\n                  overflow-x: auto;\n                  padding: 0.5em;\n                  background: #FFF;\n                  border: 1px solid #ddd;\n                }\n                code {\n                  font-size: 14px;\n                  background: #FFF;\n                  padding: 3px 5px;\n                }\n              ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
         style: {
           font: '16px Muli',
           color: '#222',
@@ -304,25 +245,8 @@ function (_Document) {
           fontWeight: '300',
           lineHeight: '1.5em',
           backgroundColor: '#F7F9FC'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 76
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 77
-        },
-        __self: this
-      })));
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null)));
     }
   }]);
 
