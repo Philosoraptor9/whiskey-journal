@@ -5,7 +5,7 @@ import generateSlug from '../utils/slugify';
 
 const { Schema } = mongoose; 
 
-const userSchema = new Schema({
+const mongoSchema = new Schema({
     googleId: {
         type: String,
         required: true,
@@ -103,8 +103,8 @@ class UserClass {
     }
 }
 
-userSchema.loadclass(UserClass);
+mongoSchema.loadClass(UserClass);
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', mongoSchema);
 
 export default User;
