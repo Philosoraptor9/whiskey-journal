@@ -10,6 +10,8 @@ import mongoSessionStore from 'connect-mongo';
 
 import User from './models/User';
 
+import auth from './google';
+
 dotenv.config();
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -54,13 +56,7 @@ app.prepare().then(() => {
   
   server.use(session(sess));
 
-  server.get('/', async (req, res) => {
-    User.findOne({ slug: 'team-builder-book' }).then(user =>{
-      req.user = user
-    app.render(req, res, '/')
-    console.log('HERE IS THE ', user);
-  })
-})
+  auth({ server, ROOT_URL })
 
   server.get('*', (req, res) => handle(req, res));
 

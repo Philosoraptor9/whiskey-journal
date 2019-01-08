@@ -54,6 +54,25 @@ function auth({ ROOT_URL, server }){
     server.use(passport.session());
 
     // Express routes will go here
+    server.get('/auth/google', passport.aunthenticate('google', {
+        scope: [profile, email],
+        prompt: select_account,
+    }));
+
+    server.get(
+        '/oauth2callback',
+        passport.aunthenticate('google',{
+            failureRedirect: '/login',
+        }),
+        (req, res) => {
+            res.redirect('/');
+        },
+    );
+    
+    server.get('logout', (req, res) =>{
+        req.logout();
+        res.redirect('/login');
+    });
 }
 
 export default auth
