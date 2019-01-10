@@ -69,7 +69,7 @@ function auth({ ROOT_URL, server }){
         },
     );
     
-    server.get('logout', (req, res) =>{
+    server.get('/logout', (req, res) =>{
         req.logout();
         res.redirect('/login');
     });
