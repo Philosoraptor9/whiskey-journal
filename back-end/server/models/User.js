@@ -96,6 +96,7 @@ class UserClass {
             googleToken,
             displayName,
             avatarUrl,
+            slug,
             isAdmin: userCount === 0
         });
 
