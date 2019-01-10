@@ -54,14 +54,14 @@ function auth({ ROOT_URL, server }){
     server.use(passport.session());
 
     // Express routes will go here
-    server.get('/auth/google', passport.aunthenticate('google', {
-        scope: [profile, email],
-        prompt: select_account,
+    server.get('/auth/google', passport.authenticate('google', {
+        scope: ['profile', 'email'],
+        prompt: 'select_account',
     }));
 
     server.get(
         '/oauth2callback',
-        passport.aunthenticate('google',{
+        passport.authenticate('google',{
             failureRedirect: '/login',
         }),
         (req, res) => {
