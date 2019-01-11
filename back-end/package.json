@@ -6,7 +6,10 @@
     "dev": "nodemon server/app.js --watch server --exec babel-node --presets=@babel/preset-env",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "test": "jest --coverage"
+  },
+  "jest":{
+    "coverageDirectory": "./.coverage"
   },
   "keywords": [],
   "author": "",
