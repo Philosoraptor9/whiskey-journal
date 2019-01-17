@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Link from 'next/link';
 
+import Button from '@material-ui/core/Button';
+
 import withAuth from '../lib/withAuth';
 import withLayout from '../lib/withLayout';
 import NavLayout from '../components/NavLayout.js';
-
-import Button from '@material-ui/core/Button';
+import notify from '../lib/notifier';
 
 
 class Index extends React.Component {
@@ -31,7 +32,11 @@ class Index extends React.Component {
           <p>Dashboard</p>
           <p>Email: {user.email}</p>
         </NavLayout>
-    
+
+        <Button variant="contained" onClick={() => notify('success message')} >
+          Click me to test notify()
+        </Button>
+
           <h3 style={{textAlign: 'center' }}>Mmm Whiskey</h3>
             <Link href= '/tips'>
               <Button style={{ width: '100px', margin: '0px auto', display: 'block'}} variant="contained">Tasting Tips</Button>

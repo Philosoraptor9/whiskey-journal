@@ -11,6 +11,7 @@ import mongoSessionStore from 'connect-mongo';
 import User from './models/User';
 
 import auth from './google';
+import logger from './logs';
 
 dotenv.config();
 
@@ -62,7 +63,7 @@ app.prepare().then(() => {
 
   server.listen(port, (err) => {
     if (err) throw err;
-    console.log(`> Ready on ${ROOT_URL}`); 
+    logger.info(`> Ready on ${ROOT_URL}`); 
   });
 });
 

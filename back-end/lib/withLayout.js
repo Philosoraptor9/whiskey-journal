@@ -9,6 +9,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import getContext from './context';
 import Header from '../components/Header';
+import Notifier from '../components/Notifier';
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
@@ -39,6 +40,7 @@ function withLayout(BaseComponent) {
                 <div>
                   <Header {...this.props} />
                   <BaseComponent {...this.props} />
+                  <Notifier />
                 </div>
             </MuiThemeProvider>
         );
