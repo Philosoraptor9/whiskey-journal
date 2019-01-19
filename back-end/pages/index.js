@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import withAuth from '../lib/withAuth';
 import withLayout from '../lib/withLayout';
 import NavLayout from '../components/NavLayout.js';
-import notify from '../lib/notifier';
+import notify from '../lib/Notifier';
 
 
 class Index extends React.Component {
