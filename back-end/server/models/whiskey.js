@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-const whiskeySchema = new mongoose.Schema ({
+const mongoSchema = new Schema ({
     brand: {type: String},
     name: {type: String},
     country: {type: String},
@@ -19,4 +19,12 @@ const whiskeySchema = new mongoose.Schema ({
     }
 });
 
-module.exports = mongoose.model('Whiskey', whiskeySchema)
+class WhiskeyClass {
+
+}
+
+mongoSchema.loadClass(WhiskeyClass);
+
+const Whiskey = mongoose.model('Whiskey', mongoSchema);
+
+export default Whiskey;
