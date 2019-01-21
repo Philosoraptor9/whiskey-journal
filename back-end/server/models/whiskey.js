@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+const { Schema } = mongoose;
+
 const whiskeySchema = new mongoose.Schema ({
     brand: {type: String},
     name: {type: String},
