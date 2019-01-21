@@ -32,8 +32,21 @@ const mongoSchema = new Schema ({
 });
 
 class WhiskeyClass {
+    static async list({ offset = 0, limit = 10 } = {}) {
 
+    }
+    static async getBySlug({ slug }) {
+
+    }
+    static async add({ name }) { 
+
+    }
+    static async edit({ name }){
+
+    }
 }
+
+// may need to add other keys to add and edit methods once tested 
 
 mongoSchema.loadClass(WhiskeyClass);
 
