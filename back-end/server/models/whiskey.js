@@ -4,7 +4,19 @@ const { Schema } = mongoose;
 
 const mongoSchema = new Schema ({
     brand: {type: String},
-    name: {type: String},
+    name: {
+        type: String,
+        required: true
+    },
+    slug: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    createdAt: {
+        type: Date,
+        required: true
+    },
     country: {type: String},
     age: {type: Number},
     type: {type: String}, 
