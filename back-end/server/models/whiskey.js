@@ -33,7 +33,11 @@ const mongoSchema = new Schema ({
 
 class WhiskeyClass {
     static async list({ offset = 0, limit = 10 } = {}) {
-
+        const whiskeys = await this.find({})
+        .sort({ createdAt: -1 })
+        .skip(offset)
+        .limit(limit);
+        return { whiskeys };
     }
     static async getBySlug({ slug }) {
 
