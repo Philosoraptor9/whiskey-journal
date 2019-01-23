@@ -44,6 +44,10 @@ class WhiskeyClass {
         if (!WhiskeyDoc) {
             throw new error ('Whiskey not found');
         }
+
+        const whiskey = WhiskeyDoc.toObject();
+
+        return whiskey;
     }
     static async add({ name }) { 
 
