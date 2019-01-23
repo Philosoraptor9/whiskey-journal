@@ -40,7 +40,10 @@ class WhiskeyClass {
         return { whiskeys };
     }
     static async getBySlug({ slug }) {
-
+        const WhiskeyDoc = await this.findOne({ slug })
+        if (!WhiskeyDoc) {
+            throw new error ('Whiskey not found');
+        }
     }
     static async add({ name }) { 
 
