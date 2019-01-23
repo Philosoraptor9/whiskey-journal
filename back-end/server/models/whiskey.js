@@ -15,7 +15,8 @@ const mongoSchema = new Schema ({
     },
     createdAt: {
         type: Date,
-        required: true
+        required: true,
+        default: Date.now
     },
     country: {type: String},
     age: {type: Number},
@@ -47,10 +48,21 @@ class WhiskeyClass {
 
         const whiskey = WhiskeyDoc.toObject();
 
+        // Will need a .sort & .map function here to organize Whiskeys and display
         return whiskey;
     }
-    static async add({ name }) { 
 
+    static async add({ name }) { 
+        const slug = await generateSlug(this, name);
+
+        if (!slug){
+            throw new error(`Error generating slug for ${name}`);
+        }
+
+        return this.create({
+            name,
+            slug
+        });
     }
     static async edit({ name }){
 
