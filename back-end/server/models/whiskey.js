@@ -43,7 +43,7 @@ class WhiskeyClass {
     static async getBySlug({ slug }) {
         const WhiskeyDoc = await this.findOne({ slug })
         if (!WhiskeyDoc) {
-            throw new error ('Whiskey not found');
+            throw new Error ('Whiskey not found');
         }
 
         const whiskey = WhiskeyDoc.toObject();
@@ -56,7 +56,7 @@ class WhiskeyClass {
         const slug = await generateSlug(this, name);
 
         if (!slug){
-            throw new error(`Error generating slug for ${name}`);
+            throw new Error(`Error generating slug for ${name}`);
         }
 
         return this.create({
@@ -64,8 +64,25 @@ class WhiskeyClass {
             slug
         });
     }
-    static async edit({ name }){
+    static async edit({ id, name, country, rating }){
+        const whiskey = await this.findById(id, 'slug name');
 
+        if (!whiskey){
+            throw new Error('Whiskey not found by id');
+        }
+
+        const modifier = { country, rating }
+
+        if (name !== whiskey.name){
+            modifier.name = name;
+            modifier.slug = await generateSlug(this, name);
+        }
+
+        await this.updateOne({ _id:id }, { $set: modifier })
+
+        const editedWhiskey = await this.findById(id, 'slug');
+
+        return editedWhiskey
     }
 }
 
