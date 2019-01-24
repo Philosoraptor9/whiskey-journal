@@ -9,4 +9,13 @@ router.use('/api/v1/admin', (req, res, next) => {
     next();
 })
 
+router.get('/api/v1/admin/whiskeys', (req, res, next) => {
+    try {
+        const whiskeys = await Whiskey.list();
+        res.json(whiskeys);
+    } catch(err) {
+        res.json({ err: err.message || err.toString() });
+    }
+});
+
 export default router;
