@@ -13,6 +13,8 @@ import User from './models/User';
 import auth from './google';
 import logger from './logs';
 
+server.use(express.json());
+
 dotenv.config();
 
 const dev = process.env.NODE_ENV !== 'production';

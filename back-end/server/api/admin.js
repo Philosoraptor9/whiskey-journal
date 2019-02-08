@@ -18,4 +18,14 @@ router.get('/api/v1/admin/whiskeys', (req, res, next) => {
     }
 });
 
+router.post('/whiskeys/edit', async (req, res) => {
+    try {
+        const editedWhiskey = await Whiskey.edit(req.body);
+        res.json(editedWhiskey);
+    }
+    catch (err) {
+        res.json({ error: err.message || err.toString() });
+    }
+})
+
 export default router;
