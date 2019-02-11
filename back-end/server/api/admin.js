@@ -39,4 +39,16 @@ router.post('/whiskeys/edit', async (req, res) => {
     }
 })
 
+router.get('whiskeys/detail/:slug', async (req, res) => {
+    try{
+        const whiskey = await Whiskey.getBySlug({ slug: req.params.slug });
+        res.json(whiskey);
+    }
+    catch (err) {
+        res.json({ error: err.message || err.toString() });
+    }
+})
+
+// May need a syncContent route here for updated whiskeys
+
 export default router;
