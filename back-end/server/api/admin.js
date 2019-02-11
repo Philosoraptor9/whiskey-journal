@@ -18,6 +18,17 @@ router.get('/api/v1/admin/whiskeys', (req, res, next) => {
     }
 });
 
+router.post('/whiskeys/add', (req, res, next) => {
+    try {
+        const whiskey = await whiskey.add(Object.assign({ userId: req.user.id}, req.body));
+        res.json(whiskey);
+    }
+    catch (err){
+        logger.error(err);
+        res.json({ error: err.message || err.toString() });
+    }
+})
+
 router.post('/whiskeys/edit', async (req, res) => {
     try {
         const editedWhiskey = await Whiskey.edit(req.body);
