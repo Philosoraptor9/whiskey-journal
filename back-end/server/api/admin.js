@@ -1,3 +1,8 @@
+const express = require('express');
+const Whiskey = require('../models/Whiskey');
+const User = require('../models/user');
+const logger = require('../logs')
+
 const router = express.Router()
 
 router.use('/api/v1/admin', (req, res, next) => {
