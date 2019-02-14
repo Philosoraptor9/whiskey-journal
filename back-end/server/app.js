@@ -37,6 +37,8 @@ const ROOT_URL = `http://localhost:${port}`;
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+const api = require('./api');
+
 app.prepare().then(() => {
   const server = express();
 
@@ -60,6 +62,8 @@ app.prepare().then(() => {
   server.use(session(sess));
 
   auth({ server, ROOT_URL })
+
+  api(server);
 
   server.get('*', (req, res) => handle(req, res));
 
