@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
-const connectionString = process.env.MONGODB_URI || 'mongodb://localhost/whiskyJournal'
+const connectionString = process.env.MONGODB_URI || 'mongodb://localhost/whiskyJournal';
 
-mongoose.connect(connectionString)
+mongoose.connect('connectionString');
 
 mongoose.connection.on('connected', () => {
   console.log(`mongoose is connected to ${connectionString}`);

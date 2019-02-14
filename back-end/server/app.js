@@ -13,8 +13,6 @@ import User from './models/User';
 import auth from './google';
 import logger from './logs';
 
-server.use(express.json());
-
 dotenv.config();
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -39,8 +37,14 @@ const handle = app.getRequestHandler();
 
 const api = require('./api');
 
+const URL_MAP = {
+  '/login': '/public/login',
+};
+
 app.prepare().then(() => {
   const server = express();
+
+  server.use(express.json());
 
   const MongoStore = mongoSessionStore(session);
 
@@ -65,7 +69,14 @@ app.prepare().then(() => {
 
   api(server);
 
-  server.get('*', (req, res) => handle(req, res));
+  server.get('*', (req, res) => {
+    const url = URL_MAP[req.path];
+    if (url){
+      app.render(req, res, url);
+    } else {
+    handle(req, res)
+  }
+});
 
   server.listen(port, (err) => {
     if (err) throw err;
