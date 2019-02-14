@@ -8,7 +8,7 @@ npm-debug.log
 .build/*
 .next
 .vscode/
-node_modules/
+node_modules
 .coverage
 .env
 .next
